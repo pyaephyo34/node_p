@@ -23,7 +23,7 @@ weatherform.addEventListener('submit',(e)=>{
     messageOne.textContent = 'loading ....'
     messageTwo.textContent = ''
     if(location){
-        fetch('http://localhost:3000/weather?address='+location).then((response) => {
+        fetch('https://node-p-2f4i.onrender.com/weather?address='+location).then((response) => {
             response.json().then((data) => {
                 messageOne.textContent = ''
                 messageTwo.textContent = ''
